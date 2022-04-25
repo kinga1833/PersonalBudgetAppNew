@@ -1,0 +1,396 @@
+html, body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/background.png");
+	font-family: 'Nunito', sans-serif;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+.container
+{
+	width: 100%;
+	min-height:calc100%;
+	position:relative;
+}
+header
+{
+	width: 100%;
+	text-align: center;
+}
+h3
+{
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding: 0px;
+}
+.logo
+{
+	color: #060d57;
+	font-size: 65px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
+}
+.square
+{
+	float: left;
+}
+.footer
+{
+	background-color: #cda3bc;
+	margin: 0;
+	padding: 15px 0 0;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.startpagelist
+{
+	list-style-type: none;
+	font-size: 18px;
+	padding: 20px 10px 20px 10px;
+	-webkit-box-shadow: 3px 3px 15px 6px grey;
+	-moz-box-shadow: 3px 3px 15px 6px grey;
+	box-shadow: 3px 3px 15px 6px grey;
+	border-radius: 5px;
+}
+.loginRegister
+{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 3px 3px 15px 6px grey;
+	-moz-box-shadow: 3px 3px 15px 6px grey;
+	box-shadow: 3px 3px 15px 6px grey;
+	border-radius: 5px;
+}
+.login
+{
+	background-color: #060d57;
+	height: 45px;
+	margin-top: 20px;
+	padding-top: 6px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-align: center;
+	border-radius: 5px;
+}
+.login:hover
+{
+	background-color: #082e79;
+	cursor: pointer;
+}
+a.loginlink
+{
+	color: white;
+	text-decoration: none;
+}
+.register
+{
+	background-color: #cda3bc;
+	height: 45px;
+	margin-top: 20px;
+	margin-right: 100px;
+	margin-left: 100px;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-top: 6px;
+	text-align: center;
+	border-radius: 5px;
+}
+.register:hover
+{
+	background-color: #deb4cb;
+	cursor: pointer;
+	text-decoration: none;
+}
+a.registerlink
+{
+	color: #082e79;
+	text-decoration: none;
+}
+a.logolink
+{
+	color: #060d57;
+	text-decoration: none;
+}
+h2
+{
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 7px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+	color: #404040;
+}
+#subtitle
+{
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: grey;
+}
+.registerorloginwindow
+{
+	font-size: 20px;
+	background-color: white;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding-top: 20px;
+	padding-bottom:20px;
+	-webkit-box-shadow: 3px 3px 15px 6px grey;
+	-moz-box-shadow: 3px 3px 15px 6px grey;
+	box-shadow: 3px 3px 15px 6px grey;
+}
+form
+{ 
+	padding: 20px 20px;
+	text-align: center;
+
+}
+.icons
+{
+	background-color: #060d57;
+	color: #efefef;
+	border-radius: 5px;
+	height: 40px;
+	text-align: center;
+	padding-top:5px;
+	
+}
+.square > ul > li
+{
+	margin-top: 11px;
+}
+.square >ul > li >i
+{
+	font-size:30px;
+	margin:15px;
+	color: #060d57;
+}
+.userinput
+{
+	height: 40px;
+	margin-bottom: 10px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	outline: none;
+}
+input[type=text]:focus,
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #cdcdcd;
+	background-color: #dedede;
+	color: black;
+}
+.submitlogin
+{
+	width: 310px;
+	background-color: #060d57;
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	border: none;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.submitregistration
+{
+	width: 310px;
+	background-color: #cda3bc;
+	font-size: 20px;
+	font-weight: 700;
+	color: #082e79;
+	border: none;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.submitlogin:hover
+{
+	background-color: #082e79;
+	color: white;
+}
+.submitregistration:hover
+{
+	background-color: #deb4cb;
+	color: #082e79;
+}
+.container-fluid
+{
+	padding: 0;
+	margin:0;
+}
+.nav-item
+{
+	margin: 0px;
+	padding: 0px;
+}
+.navbar-nav
+{
+	width: 100%;
+	margin:0;
+}
+ul
+{
+	padding: 10px 5px;
+}
+
+ul > li > a
+{
+	color: #060d57;
+	font-size: 17px;
+}
+ul > li > a:hover
+{
+	border-radius: 5px;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 10px 2px lightgrey;
+	-moz-box-shadow: 0px 0px 10px 2px lightgrey;
+	box-shadow: 0px 0px 10px 2px lightgrey;
+}
+.dropdown-menu > a
+{
+	text-align: center;
+	color: #060d57;
+	font-size: 15px;
+}
+.dropdown-menu > a:hover
+{
+	background-color: #e9e9e9;
+}
+.active
+{
+	background-color: #e9e9e9;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px 2px grey;
+	-moz-box-shadow: 0px 0px 10px 2px grey;
+	box-shadow: 0px 0px 10px 2px grey;
+}
+.navbar
+{
+	padding: 0;
+	-webkit-box-shadow: 3px 3px 15px 6px grey;
+	-moz-box-shadow: 3px 3px 15px 6px grey;
+	box-shadow: 3px 3px 15px 6px grey;
+}
+figcaption
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 30px;
+	text-align: center;
+}
+.table1
+{
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+}
+td, tr, th
+{
+	border: 1px solid lightgrey;
+	width: 300px;
+	height: 30px;
+}
+.tabletitle
+{
+	font-size: 20px;
+	color: #060d57;
+	background-color: #cda3bc;
+}
+.tablesubtitle
+{
+	font-size:18px;
+	font-weight: 700;
+}
+.row
+{
+	padding:0;
+	margin:0;
+}
+.addoperation
+{
+	-webkit-box-shadow: 3px 3px 15px 6px grey;
+	-moz-box-shadow: 3px 3px 15px 6px grey;
+	box-shadow: 3px 3px 15px 6px grey;
+	border-radius: 5px;
+	margin-top: 50px;
+	font-size: 20px;
+}
+h4
+{
+	color: #060d57;
+}
+.btn
+{
+	background-color: #cda3bc;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.btn:hover
+{
+	background-color:#deb4cb;
+}
+.input-group-prepend
+{
+	width: 100%;
+}
+label
+{
+	margin-left: 0;
+}
+h5
+{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.error
+{
+	color: red;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.registersuccesfully
+{
+	text-align: center;
+	color: grey;
+	font-size: 20px;
+	background-color: white;
+	-webkit-box-shadow: 3px 3px 15px 6px grey;
+	-moz-box-shadow: 3px 3px 15px 6px grey;
+	box-shadow: 3px 3px 15px 6px grey;
+	border-radius: 5px;
+}
+.beginendperiod
+{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
