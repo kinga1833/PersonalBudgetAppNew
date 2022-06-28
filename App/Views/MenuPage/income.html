@@ -1,0 +1,49 @@
+{% extends 'menubase.html' %}
+
+{% block body %}
+	<section class="mx-auto px-3">
+			<div class="row">
+				<div class="addoperation text-center mx-auto my-5 pt-4 bg-white col-sm-10 col-md-7 col-lg-5 ">
+					<h4 class="font-weight-bold">DODAJ PRZYCHÓD</h4>
+					
+					<form action="addincomeaction.php" method="post">
+					
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text ">Kwota</span>
+								<input class="form-control" type="number" name="amount" step="0.01" value="" required="">
+							</div>
+							
+							<div class="input-group-prepend mt-3">
+								<span class="input-group-text ">Data</span>
+								<input class="form-control" type="date" name="date" value="" required="">
+							</div>
+							<div class="input-group-prepend mt-3">
+								<span class="input-group-text ">Kategoria</span>
+									<select class="form-control" name="category" required="">
+										<option value="" disabled="" selected="" hidden="">wybierz kategorię</option>
+										<option>wynagrodzenie</option>
+										<option>odsetki</option>
+										<option>sprzedaż na Allegro</option>
+										<option>inna</option>
+									</select>
+							</div>
+							<div class="input-group-prepend mt-3">
+								<span class="input-group-text ">Komentarz <br>(opcjonalnie) </span>
+								<textarea class="form-control" name="comment" maxlength="100" rows="4"></textarea>
+							</div>
+							<div class="mt-4 mx-auto">	
+								<button class="btn mr-4 col-5" type="submit">	
+									Dodaj
+								</button>
+								<button class="btn submitbutton col-5">
+									Anuluj
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+{% endblock %}
