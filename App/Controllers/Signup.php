@@ -17,29 +17,28 @@ class Signup extends \Core\Controller
 		
         $user = new User($_POST);
 		
-		if ($user->save())
-		{
+		if ($user->save()){
+
+			$user->sendActivationEmail();
 			$this->redirect('/signup/success');
 			
 		} else {
 			
 			View::renderTemplate('Signup/new.html', ['user' => $user ]);
 		}
-			
-			//$user->sendActivationEmail();
-
-            //View::renderTemplate('/Signup/success.html');
-
-       //} else {
-				//echo "nie udało się";
-            //View::renderTemplate('Signup/new.html', [
-              //  'user' => $user
-            //]);
-
-        //}
     }	
 	public function successAction()
 	{
 		View::renderTemplate('Signup/success.html');
+	}
+	public function activateAction()
+	{
+		User::activate($this->route_params['token']);
+
+		$this->redirect('/signup/activated');
+	}
+	public function activatedAction()
+	{
+		View::renderTemplate('Signup/activated.html');
 	}
 }
