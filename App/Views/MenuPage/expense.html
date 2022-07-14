@@ -1,0 +1,119 @@
+{% extends 'menubase.html' %}
+
+{% block header %}
+	<nav class="navbar mt-4 bg-white navbar-expand-lg">
+				
+		<button class="navbar-toggler my-2 ml-2" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+			<span class="icon-menu-1"></span>
+		</button>
+			
+		<div class="collapse navbar-collapse" id="mainmenu">
+			 
+			<ul class="navbar-nav mx-auto">
+			
+				<li class="col-lg-2 ml-1 nav-item">
+					<a class="nav-link" href="/menuPage/start"><i class="icon-home mr-2"></i>Strona główna</a>
+				</li>
+					
+				<li class="col-lg-2 nav-item">
+					<a class="nav-link" href="/menuPage/income"><i class="icon-money mr-2"></i>Dodaj przychód</a>
+				</li>
+					
+				<li class="col-lg-2 nav-item active">
+					<a class="nav-link" href="/menuPage/expense"><i class="icon-shopping-basket mr-2"></i>Dodaj wydatek</a>
+				</li>
+					
+				<li class="col-lg-2 nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"><i class="icon-chart-pie mr-2"></i>Przeglądaj bilans</a>
+					
+					<div class="dropdown-menu col-lg-12" aria-labelledby="submenu">
+					
+						<a class="dropdown-item" href="/menuPage/balancecm">bieżący miesiąc</a>
+						<a class="dropdown-item" href="/menuPage/balancelm">poprzedni miesiąc</a>
+						<a class="dropdown-item" href="/menuPage/balancecy">bieżący rok</a>
+						<a class="dropdown-item" href="/menuPage/balancec">niestandardowy</a>
+					
+					</div>
+				</li>
+					
+				<li class="col-lg-2 nav-item ">
+					<a class="nav-link" href="/menuPage/settings"><i class="icon-cog mr-2"></i>Ustawienia</a>
+				</li>
+					
+				<li class="col-lg-2 mr-1 nav-item">
+					<a class="nav-link" href="/logout"><i class="icon-logout mr-2"></i>Wyloguj się</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+{% endblock %}
+
+{% block body %}
+
+<section class="mx-auto px-2">
+			<div class="row">
+				<div class="addoperation text-center mx-auto my-5 pt-4 bg-white col-sm-10 col-md-7 col-lg-5 ">
+					<h4 class="font-weight-bold">DODAJ WYDATEK</h4>
+					<form action="addexpenseaction.php" method="post">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text ">Kwota</span>
+								<input class="form-control" type="number" name="amount" step="0.01" value="" required="">
+							</div>
+							<div class="input-group-prepend mt-3">
+								<span class="input-group-text ">Data</span>
+								<input class="form-control" type="date" name="date" value="" required="">
+							</div>
+							<div class="input-group-prepend mt-3">
+								<span class="input-group-text ">Sposób płatności</span>
+									<select class="form-control" name="paymentmethod" required="">
+										<option value="" disabled="" selected="" hidden="">wybierz kategorię</option>
+										<option>gotówka</option>
+										<option>karta kredytowa</option>
+										<option>karta debetowa</option>
+										<option>blik</option>
+										<option>Bitcoin</option>
+									</select>
+							</div>
+							<div class="input-group-prepend mt-3">
+								<span class="input-group-text ">Kategoria</span>
+									<select class="form-control" name="expensecategory" required="">
+										<option value="" disabled="" selected="" hidden="">wybierz kategorię</option>
+										<option>jedzenie</option>
+										<option>mieszkanie</option>
+										<option>transport</option>
+										<option>telekomunikacja</option>
+										<option>opieka zdrowotna</option>
+										<option>ubrania</option>
+										<option>higiena</option>
+										<option>dzieci</option>
+										<option>rozrywka</option>
+										<option>wycieczka</option>
+										<option>szkolenie</option>
+										<option>książki</option>
+										<option>oszczędności</option>
+										<option>na emeryturę</option>
+										<option>spłata długów</option>
+										<option>darowizna</option>
+										<option>inne wydatki</option>
+									</select>
+							</div>
+							<div class="input-group-prepend mt-3">
+								<span class="input-group-text ">Komentarz <br> (opcjonalnie)</span>
+								<textarea class="form-control" name="comment" maxlength="100" rows="4"></textarea>
+							</div>
+							<div class="mt-4 mx-auto">	
+								<button class="btn mr-4 col-5" type="submit">	
+									Dodaj
+								</button>
+								<button class="btn col-5">
+									Anuluj
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+{% endblock %}

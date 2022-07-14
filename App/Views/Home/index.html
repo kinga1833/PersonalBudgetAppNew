@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+	<div class="square col-md-12 col-lg-7">
+		<ul class="startpagelist mt-5 bg-white">
+			<li><i class="icon-shopping-basket" ></i>Dodawaj swoje przychody i wydatki do aplikacji</li>
+
+			<li><i class="icon-tags"></i>Przypisuj kategorie transakcjom</li>
+									
+			<li><i class="icon-calc "></i>Sprawdzaj różnicę między wydatkami i przychodami</li>
+									
+			<li><i class="icon-chart-pie"></i>Oglądaj bilans na wykresie</li>
+									
+			<li><i class="icon-money"></i>Zacznij oszczędzać! </li>
+		</ul>		
+	</div>
+				
+	<div class="square col-md-12 col-lg-5">
+		<div class="loginRegister mt-5 mx-auto bg-white">Nie masz konta?<br />
+			<div class="register mx-auto col-10 col-md-8"><a href="/signup/new" class="registerlink"><i class="icon-user-plus"></i>Zarejestruj się</a></div>
+					</div>
+			<div class="loginRegister mt-5 mb-5 mx-auto bg-white">Masz już konto?<br />
+			<div class="login mx-auto col-10 col-md-8"><a href="/login/new" class="loginlink"><i class="icon-login"></i> Zaloguj się</a></div>
+		</div>
+	</div>	
+	
+{% endblock %}

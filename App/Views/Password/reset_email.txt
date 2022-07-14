@@ -1,0 +1,5 @@
+Resetowanie hasła
+
+Kliknij link,aby zresetować hasło do mojeFinanse.pl: 
+
+{{ url }}
